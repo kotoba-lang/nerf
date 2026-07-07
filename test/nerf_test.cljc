@@ -4,7 +4,7 @@
 
 (deftest namespace-loads
   (testing "the restored CLJC namespace loads"
-    (is (some? (the-ns 'nerf)))))
+    (is (some? (find-ns 'nerf)))))
 
 ;; Port of Rust `#[test] fn sphere_density` (kami-nerf/src/lib.rs).
 (deftest sphere-density
