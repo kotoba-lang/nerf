@@ -3,4 +3,4 @@
             [nerf]))
 (deftest namespace-loads
   (testing "the restored CLJC namespace loads"
-    (is (some? nerf))))
+    (is (some? (find-ns 'nerf)))))
