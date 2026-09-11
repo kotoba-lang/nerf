@@ -13,7 +13,7 @@ sparse voxel volume, trilinear-interpolating density at each voxel center and ke
 cells above a threshold. Pure data + pure functions; no IO/GPU.
 
 The original Rust crate depended on `kami-voxel` for its `VoxelVolume`/`Voxel` output
-type. That crate has not yet been restored as a CLJC dependency, so `src/nerf.cljc`
+type. That crate has not yet been restored as a CLJC dependency, so `src/nerf.cljk`
 ports a minimal self-contained voxel volume representation (a sparse `[x y z] -> voxel`
 map) sufficient to satisfy `to-volume`'s contract, rather than introducing a hard
 dependency.
@@ -26,7 +26,7 @@ portable Vec3 math helpers (`v-sub`, `v-add`, `v-div`, `v-scale`, `v-length`, `v
 ## Status
 
 Restored. Both original Rust `#[test]`s (`sphere_density`, `with_colors`) are ported
-1:1 to `test/nerf_test.cljc`, plus a namespace-loads smoke test — 3 tests / 4 assertions,
+1:1 to `test/nerf_test.cljk`, plus a namespace-loads smoke test — 3 tests / 4 assertions,
 0 failures.
 
 ## Develop
