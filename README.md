@@ -32,5 +32,5 @@ Restored. Both original Rust `#[test]`s (`sphere_density`, `with_colors`) are po
 ## Develop
 
 ```bash
-clojure -M:test
+kbb -M:test
 ```
